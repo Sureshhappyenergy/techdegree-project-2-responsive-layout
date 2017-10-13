@@ -4,67 +4,86 @@
     <meta charset="utf-8">
     <title>Responsive Layout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.google.com/specimen/Orbitron?selection.family=Orbitron" rel="stylesheet">
+
   </head>
   <body>
-    <header>
-      <title>Student Name</title>
-      <ul>
-        <li><a href="#Home">HOME</a></li>
-        <li><a href="Portfolio">PORTFOLIO</a></li>
-        <li><a href="Contact">CONTACT</a></li>
-      </ul>
+  <header class="main-header" id="main-header">
+      <div class="container">
+        <h1 class="name">Suresh</h1>
+        <ul class="main-nav">
+          <li><a href="#Home">HOME</a></li>
+          <li><a href="#Portfolio">PORTFOLIO</a></li>
+          <li><a href="#Contact">CONTACT</a></li>
+        </ul>
+      </div>
     </header>
 
-    <img src="images/responsive-layout-profile.png" alt="profile_pic" />
-    <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put my skills to use!</p>
-
-    <p>PORTFOLIO </p>
-    <img src="images/portfolio-1.png" alt="portfolio-1" />
-
-
-    <p>Marketing Page</p>
-    <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-    <img src="images/portfolio-2.png" alt="portfolio-2" />
+    <div class="container">  <!--main section  div-->
+        <div class="profile">
+          <img src="images/responsive-layout-profile.png" alt="profile_pic" />
+          <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put my skills to use!</p>
+        </div>
 
 
-    <p>Search Page</p>
-    <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-    <img src="images/portfolio-3.png" alt="portfolio-3" />
+        <h2>PORTFOLIO </h2>
 
+      <div class="marketing col">
+          <img src="images/portfolio-1.png" alt="portfolio-1" />
+          <h2>Marketing Page</h2>
+          <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+      </div>  <!--marketing page div-->
 
-    <p>Travel App</p>
-    <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-    <img src="images/portfolio-4.png" alt="portfolio-4" />
+      <div class="search col">
+          <img src="images/portfolio-2.png" alt="portfolio-2" />
+          <h2>Search Page</h2>
+          <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+      </div> <!-- search page div-->
 
+      <div class="travel col">
+        <img src="images/portfolio-3.png" alt="portfolio-3" />
+        <h2>Travel App</h2>
+        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+      </div> <!-- travel page div-->
 
+      <div class="map col">
+        <img src="images/portfolio-4.png" alt="portfolio-4" />
+        <h2>Map of Favorite Spots</h2>
+        <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+      </div> <!-- map page div-->
 
-    <p>Map of Favorite Spots</p>
-    <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-    <img src="images/portfolio-5.png" alt="portfolio-5" />
+      <div class="photo gallery col">
+        <img src="images/portfolio-5.png" alt="portfolio-5" />
+        <h2>Photo Gallery</h2>
+        <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos</p>
+      </div>  <!-- photo gallery page div-->
 
+      <div class="calculator col">
+        <img src="images/portfolio-6.png" alt="portfolio-6" />
+        <h2>Calculator</h2>
+        <p>Someone can enter in the numbers they want, and press the big blue button and get the results.</p>
+      </div>  <!-- calculator page div-->
 
-    <p>Photo Gallery</p>
-    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos</p>
-    <img src="images/portfolio-6.png" alt="portfolio-6" />
+      <div class="footer-contact">
+        <h2>CONTACT</h2>
+        <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p><br>
+        <p>Phone        +1(111)555-1234</p>
+        <p> Email        email@yoursite.com</p>
+      </div>  <!-- ****footer-contact div***** -->
+    </div>  <!--main section containaer div-->
 
-    <p>Calculator</p>
-      <p>Someone can enter in the numbers they want, and press the big blue button and get the results.</p>
-
-
-
-
-
-
-
-
-    <footer>
-      <p>CONTACT</p>
-      <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-      <p>Phone   +1(111)555-1234</p>
-      <p> Email  email@yoursite.com</p>
-
-    </footer>
-  </body>
+<footer class="main-footer clearfix">
+  <div class="container">
+        <p class="footer-name">Student Name</p>
+        <p class="back-to-top"><a href="#main-header">BACK TO TOP<a/></p>
+        <ul class="footer-nav">
+          <li><a href="#Home">HOME</a></li>
+          <li><a href="#Portfolio">PORTFOLIO</a></li>
+          <li><a href="#Contact">CONTACT</a></li>
+        </ul>
+    </div> <!--footer containaer div-->
+  </footer>
+</body>
 </html>
